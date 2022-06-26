@@ -1,0 +1,74 @@
+name: afsha
+description: A new Flutter application.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+9
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_pagewise:
+  cupertino_icons: ^1.0.2
+  easy_localization: ^3.0.0
+  flutter_svg: ^1.1.0
+  cached_network_image: ^3.1.0
+  introduction_screen: ^3.0.2
+  shimmer: ^2.0.0
+  flutter_screenutil: ^5.5.3+2
+  fluttertoast: ^8.0.8
+  font_awesome_flutter: ^10.1.0
+  pin_code_fields: ^7.4.0
+  onboarding: ^3.1.0
+  steps_indicator: ^1.3.0
+  timeline_tile: ^2.0.0
+  timelines: ^0.1.0
+  flutter_keyboard_visibility: ^5.1.0
+  smooth_star_rating: ^1.1.1
+  dio: ^4.0.1
+  dio_cookie_manager: ^2.0.0
+  cookie_jar:
+  get_it: ^7.2.0
+  provider: ^6.0.3
+  another_flushbar: ^1.10.2
+  google_maps_flutter:
+  geocoding: ^2.0.1
+  geolocator:
+#  geolocator: ^8.0.1
+  number_inc_dec: ^0.8.0
+  image_picker:
+  image_cropper: ^2.0.3
+  geocoder: ^0.2.1
+  pusher_client: ^2.0.0
+  firebase_core: ^1.10.5
+  firebase_messaging: ^11.2.3
+  flutter_local_notifications:
+  location: ^4.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.9.0"
+
+flutter_icons:
+  image_path: "assets/images/ic_launcher.png"
+  android: true
+  ios: true
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/buttonNavigationBar/
+    - assets/
+  fonts:
+    - family: CairoRegular
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Bold.ttf
+    - family: SemiBold
+      fonts:
+        - asset: assets/fonts/Cairo-SemiBold.ttf

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="321" height="39.999" viewBox="0 0 321 39.999">
+  <g id="order_statues" data-name="order statues" transform="translate(-32 -71)">
+    <g id="Group_56339" data-name="Group 56339" transform="translate(0 -5)">
+      <rect id="Rectangle_1374" data-name="Rectangle 1374" width="284" height="2" transform="translate(47 107)" fill="#faf2e8"/>
+    </g>
+    <g id="Group_56343" data-name="Group 56343">
+      <text id="قيد_التنفيذ" data-name="قيد التنفيذ" transform="translate(353 84)" fill="#373636" font-size="10" font-family="Cairo-SemiBold, Cairo" font-weight="600"><tspan x="-45.4" y="0">قيد التنفيذ</tspan></text>
+      <path id="Icon_ionic-ios-checkmark-circle" data-name="Icon ionic-ios-checkmark-circle" d="M11.374,3.375a8,8,0,1,0,8,8A8,8,0,0,0,11.374,3.375Zm4.1,5.788-5.142,5.165h0a.7.7,0,0,1-.446.212.673.673,0,0,1-.45-.219L7.275,12.167a.153.153,0,0,1,0-.219l.685-.685a.149.149,0,0,1,.215,0L9.882,12.97l4.692-4.727a.152.152,0,0,1,.108-.046h0a.14.14,0,0,1,.108.046l.673.7A.152.152,0,0,1,15.47,9.163Z" transform="translate(318.625 91.625)" fill="#f07824"/>
+    </g>
+    <g id="Group_56342" data-name="Group 56342" transform="translate(-4)">
+      <text id="التغليف_والتعبئة" data-name="التغليف والتعبئة" transform="translate(266 84)" fill="#373636" font-size="10" font-family="Cairo-SemiBold, Cairo" font-weight="600"><tspan x="-70.35" y="0">التغليف والتعبئة</tspan></text>
+      <path id="Icon_ionic-ios-checkmark-circle-2" data-name="Icon ionic-ios-checkmark-circle" d="M11.374,3.375a8,8,0,1,0,8,8A8,8,0,0,0,11.374,3.375Zm4.1,5.788-5.142,5.165h0a.7.7,0,0,1-.446.212.673.673,0,0,1-.45-.219L7.275,12.167a.153.153,0,0,1,0-.219l.685-.685a.149.149,0,0,1,.215,0L9.882,12.97l4.692-4.727a.152.152,0,0,1,.108-.046h0a.14.14,0,0,1,.108.046l.673.7A.152.152,0,0,1,15.47,9.163Z" transform="translate(219.625 91.625)" fill="#f07824"/>
+    </g>
+    <g id="Group_56341" data-name="Group 56341" transform="translate(4)">
+      <text id="الشحن" transform="translate(144 84)" fill="#373636" font-size="10" font-family="Cairo-SemiBold, Cairo" font-weight="600"><tspan x="-28.79" y="0">الشحن</tspan></text>
+      <path id="Icon_ionic-ios-checkmark-circle-3" data-name="Icon ionic-ios-checkmark-circle" d="M11.374,3.375a8,8,0,1,0,8,8A8,8,0,0,0,11.374,3.375Zm4.1,5.788-5.142,5.165h0a.7.7,0,0,1-.446.212.673.673,0,0,1-.45-.219L7.275,12.167a.153.153,0,0,1,0-.219l.685-.685a.149.149,0,0,1,.215,0L9.882,12.97l4.692-4.727a.152.152,0,0,1,.108-.046h0a.14.14,0,0,1,.108.046l.673.7A.152.152,0,0,1,15.47,9.163Z" transform="translate(119.625 91.626)" fill="#f07824"/>
+    </g>
+    <g id="Group_56340" data-name="Group 56340">
+      <text id="تم_التسليم" data-name="تم التسليم" transform="translate(77 84)" fill="#373636" font-size="10" font-family="Cairo-SemiBold, Cairo" font-weight="600"><tspan x="-44.74" y="0">تم التسليم</tspan></text>
+      <path id="Icon_ionic-ios-checkmark-circle-4" data-name="Icon ionic-ios-checkmark-circle" d="M11.374,3.375a8,8,0,1,0,8,8A8,8,0,0,0,11.374,3.375Zm4.1,5.788-5.142,5.165h0a.7.7,0,0,1-.446.212.673.673,0,0,1-.45-.219L7.275,12.167a.153.153,0,0,1,0-.219l.685-.685a.149.149,0,0,1,.215,0L9.882,12.97l4.692-4.727a.152.152,0,0,1,.108-.046h0a.14.14,0,0,1,.108.046l.673.7A.152.152,0,0,1,15.47,9.163Z" transform="translate(43.625 91.626)" fill="#f07824"/>
+    </g>
+  </g>
+</svg>
