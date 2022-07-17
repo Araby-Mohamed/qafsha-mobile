@@ -39,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
     startTime();
-    context.read<LocationProvider>().getPermission();
+    context.read<LocationProvider>().getPermission(context, from: 'splash');
   }
 
   GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();

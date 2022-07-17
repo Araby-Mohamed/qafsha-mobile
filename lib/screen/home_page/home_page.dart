@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
             InkWell(
               onTap: () {
                 if (mapProvider.address == null) {
-                  mapProvider.getPermission();
+                  mapProvider.getPermission(context);
                   return;
                 }
                 NavigatorX.push(context, PickLocation());

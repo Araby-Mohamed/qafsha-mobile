@@ -54,7 +54,7 @@ class LocationProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  getPermission() async {
+  getPermission(BuildContext context, {String from = 'notSplash'}) async {
     loc.Location location = new loc.Location();
 
     bool _serviceEnabled;
@@ -81,11 +81,11 @@ class LocationProvider extends ChangeNotifier {
     print('location => ${_locationData.longitude}');
     setLat = _locationData.latitude;
     setLng = _locationData.longitude;
-    getAddressFromLatLng();
+    getAddressFromLatLng(context, from: from);
   }
 
   final GeolocatorPlatform _geoLocatorPlatform = GeolocatorPlatform.instance;
-  Future<void> getCurrentPosition() async {
+  Future<void> getCurrentPosition(BuildContext context) async {
     // final hasPermission = await _handlePermission();
     // print('hasPermission => $hasPermission');
     // if (!hasPermission) {
@@ -98,7 +98,7 @@ class LocationProvider extends ChangeNotifier {
     // final position = await _geoLocatorPlatform.getCurrentPosition();
     setLat = position.latitude;
     setLng = position.longitude;
-    getAddressFromLatLng();
+    getAddressFromLatLng(context);
   }
 
   Future<bool> _handlePermission() async {
@@ -154,6 +154,7 @@ class LocationProvider extends ChangeNotifier {
   void drawPinOnMapCreated(
       {@required String lat,
       @required String lng,
+       String from = 'notSplash',
       @required Completer<GoogleMapController> mapController}) async {
     resetMarkers();
     CameraPosition cPosition = CameraPosition(
@@ -174,7 +175,7 @@ class LocationProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  getAddressFromLatLng() async {
+  getAddressFromLatLng(BuildContext context, {String from = 'notSplash'}) async {
     final coordinates = new Coordinates(_lat, _lng);
 
     var awaitaddresses =
@@ -188,6 +189,7 @@ class LocationProvider extends ChangeNotifier {
     print('6 => ${awaitaddresses[0].subLocality}');
     setAddress = awaitaddresses[0].subAdminArea ??
         '' + awaitaddresses[0].adminArea + " " + awaitaddresses[0].countryName;
+    locationApi(context: context, address: _address, from: from);
   }
 
   void locationApi({
@@ -195,6 +197,7 @@ class LocationProvider extends ChangeNotifier {
     @required String lat,
     @required String lng,
     @required String address,
+    String from = 'notSplash',
   }) async {
     displayCustomCircular(context);
     var body = {
@@ -208,7 +211,8 @@ class LocationProvider extends ChangeNotifier {
     if (response.statusCode == HttpStatus.ok ||
         response.statusCode == HttpStatus.created) {
       showToast(message: response.data['message']);
-      Navigator.pop(context);
+
+      if (from == 'notSplash') Navigator.pop(context);
     } else if (response.statusCode == HttpStatus.unprocessableEntity) {
       String error = '';
       response.data['errors'].forEach((k, v) {

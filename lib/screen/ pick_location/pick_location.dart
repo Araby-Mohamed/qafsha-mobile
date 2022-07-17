@@ -107,7 +107,7 @@ class _PickLocationState extends State<PickLocation> {
                   onTap: (latlang) {
                     locationProvider.setLat = latlang.latitude;
                     locationProvider.setLng = latlang.longitude;
-                    locationProvider.getAddressFromLatLng();
+                    locationProvider.getAddressFromLatLng(context);
                     locationProvider.drawPinOnMapCreated(
                         lat: latlang.latitude.toString(),
                         lng: latlang.longitude.toString(),
